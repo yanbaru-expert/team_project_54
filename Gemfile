@@ -5,6 +5,8 @@ ruby "2.7.3"
 
 gem "bootsnap", ">= 1.4.4", require: false
 gem "devise"
+gem 'rails-i18n', '~> 6.0'
+gem 'devise-i18n'
 gem "jbuilder", "~> 2.7"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
