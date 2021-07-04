@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    models:
+      text: テキスト教材
+      movie: 動画教材
+    attributes:
+      text:
+        genre: ジャンル
+      movie:
