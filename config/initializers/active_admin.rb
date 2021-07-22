@@ -1,5 +1,6 @@
 ActiveAdmin.setup do |config|
   # == Site Title
+  config.skip_before_action :authenticate_user!
   #
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
