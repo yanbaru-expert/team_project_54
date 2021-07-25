@@ -13,4 +13,6 @@ class Text < ApplicationRecord
     rails: 4,
     php: 5
   }
+
+  RAILS_GENRE_LIST = %w[basic git ruby rails].freeze
 end
