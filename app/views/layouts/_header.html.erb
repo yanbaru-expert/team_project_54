@@ -35,6 +35,8 @@
         <%= link_to "新規登録", new_user_registration_path, class: "nav-item nav-link active" %>
         <li class="nav-item">
         <%= link_to "ログイン", new_user_session_path, class: "nav-item nav-link active" %>
+        <li class="nav-item">
+        <%= link_to "ゲストログイン", users_guest_sign_in_path, method: :post, class: "nav-item nav-link active" %>
       <% end %>
     </ul>
   </div>
