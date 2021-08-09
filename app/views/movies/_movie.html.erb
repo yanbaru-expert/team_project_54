@@ -6,7 +6,7 @@
       </div>
       <div class="card-body text-dark movie-body">
         <a href="#" class="btn btn-secondary btn-block">読破済みにする</a>
-        <p class="card-title mt-4"><%= "Lv.#{movie_counter + 1} : #{movie.title}" %></p>
+        <p class="card-title mt-4"><%= "Lv.#{movie_counter + @movies.offset_value + 1} : #{movie.title}" %></p>
       </div>
     </div>
   </div>
