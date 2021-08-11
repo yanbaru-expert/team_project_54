@@ -3,6 +3,7 @@ ja:
     models:
       text: テキスト教材
       movie: 動画教材
+      watch_progress: 視聴済み
     attributes:
       text:
         genre: ジャンル
