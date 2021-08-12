@@ -8,4 +8,8 @@ module ApplicationHelper
       "mw-xl"
     end
   end
+
+  def title
+    params[:genre] == "php" ? "PHP" : "Ruby/Rails"
+  end
 end
