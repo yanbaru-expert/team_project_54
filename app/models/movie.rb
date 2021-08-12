@@ -1,4 +1,10 @@
 class Movie < ApplicationRecord
+  has_many :watch_progresses, dependent: :destroy
+
+  def watch_progressed_by?(user)
+    watch_progresses.any? { |watch_progress| watch_progress.user_id == user.id }
+  end
+
   with_options presence: true do
     validates :genre
     validates :title

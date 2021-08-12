@@ -3,6 +3,7 @@ ja:
     models:
       text: テキスト教材
       movie: 動画教材
+      watch_progress: 視聴済み
     attributes:
       text:
         genre: ジャンル
@@ -12,6 +13,9 @@ ja:
         genre: ジャンル
         title: タイトル
         url: URL
+      watch_progress:
+        user: ユーザー
+        movie: 動画教材
 
   attributes:
     id: ID
