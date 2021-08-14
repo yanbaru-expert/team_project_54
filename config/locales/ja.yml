@@ -4,6 +4,7 @@ ja:
       text: テキスト教材
       movie: 動画教材
       watch_progress: 視聴済み
+      read_progress: 読破済み
     attributes:
       text:
         genre: ジャンル
@@ -16,6 +17,9 @@ ja:
       watch_progress:
         user: ユーザー
         movie: 動画教材
+      read_progress:
+        user: ユーザー
+        text: テキスト教材
 
   attributes:
     id: ID
