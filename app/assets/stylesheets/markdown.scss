@@ -1,0 +1,46 @@
+@import "bootstrap/scss/bootstrap";
+
+.markdown {
+  table {
+    @extend .table;
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    border: initial;
+
+    thead {
+      background-color: #EEFFFF;
+    }
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+
+  pre {
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+    background-color: #f6ffff;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border: 2px dashed #d6dddd;
+
+    code {
+      table.rouge-table {
+        margin: 0;
+
+        td.rouge-code {
+          padding: 0;
+          vertical-align: top;
+
+          pre {
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+}
