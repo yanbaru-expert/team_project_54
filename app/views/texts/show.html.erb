@@ -1,17 +1,8 @@
 
-<%
-  str = <<~TEXT
-  |HTTPメソッド|URL|アクション|役割|
-  |---|---|---|---|
-  |GET|/users|index|一覧表示|
-  |GET|/users/new|new|新規投稿フォーム表示|
-  |POST|/users|create|新規投稿処理|
-  |GET|/users/:id|show|詳細表示|
-  |GET|/users/:id/edit|edit|更新フォーム表示|
-  |PATCH|/users/:id|update|更新処理|
-  |DELETE|/users/:id|destroy|削除処理|
-TEXT
-%>
+<h1 class="text-center pt-3 pb-2">
+  <%= markdown(@texts.title) %>
+</h1>
+
 <div class="markdown">
-  <%= markdown(str) %>
+  <%= markdown(@texts.content) %>
 </div>
