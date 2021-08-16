@@ -1,16 +1,20 @@
 <div class="col-12 col-md-6 col-lg-4">
-  <div class="card content-card border-dark mb-3">
-    <img src="https://d5izmuz0mcjzz.cloudfront.net/texts/no_image.jpg" alt="<% text.title %>">
-    <div class="card-body">
-      <p id="text-<%= text.id %>">
-        <% if text.read_progressed_by?(current_user) %>
-          <%= render "read", text: text %>
-        <% else %>
-          <%= render "unread", text: text %>
-        <% end %>
-      </p>
-      <p class="card-text mt-3"><%= text.title %></p>
-      <p>【<%= text.genre %>】</p>
+  <%= link_to text_path(text) do %>
+    <div class="card content-card border-dark mb-3">
+      <div class="card-header p-0">
+        <img class="img-fluid" src="https://d5izmuz0mcjzz.cloudfront.net/texts/no_image.jpg" alt="<% text.title %>">
+      </div>
+      <div class="card-body">
+        <p id="text-<%= text.id %>">
+          <% if text.read_progressed_by?(current_user) %>
+            <%= render "read", text: text %>
+          <% else %>
+            <%= render "unread", text: text %>
+          <% end %>
+        </p>
+        <p class="card-text mt-3"><%= text.title %></p>
+        <p>【<%= text.genre %>】</p>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>
