@@ -1,0 +1,32 @@
+ja:
+  activerecord:
+    models:
+      text: テキスト教材
+      movie: 動画教材
+      watch_progress: 視聴済み
+      read_progress: 読破済み
+    attributes:
+      text:
+        genre: ジャンル
+        title: タイトル
+        content: 内容
+      movie:
+        genre: ジャンル
+        title: タイトル
+        url: URL
+      watch_progress:
+        user: ユーザー
+        movie: 動画教材
+      read_progress:
+        user: ユーザー
+        text: テキスト教材
+
+  attributes:
+    id: ID
+    namespace: 名前空間
+    resource_type: リソースタイプ
+    resource_id: リソースID
+    author_type: 著者タイプ
+    author_id: 著者ID
+    created_at: 作成日時
+    updated_at: 更新日時

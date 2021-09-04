@@ -1,0 +1,11 @@
+<div class="base-container">
+  <h1 class="text-center mt-2 mb-4">
+    <%= title %>
+    <br class="d-sm-none">
+    動画
+  </h1>
+  <div class="row">
+    <%= render partial: "movie", collection: @movies %>
+  </div>
+</div>
+<%= paginate @movies %>

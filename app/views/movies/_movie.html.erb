@@ -1,0 +1,19 @@
+<div class="card-box col-12 col-md-6 col-lg-4">
+  <div class="card border-dark mb-3">
+    <div class="card-header p-0">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="<%= movie.url %>" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="card-body text-dark movie-body">
+      <p id="movie-<%= movie.id %>">
+        <% if movie.watch_progressed_by?(current_user) %>
+          <%= render "watch", movie: movie %>
+        <% else %>
+          <%= render "unwatch", movie: movie %>
+        <% end %>
+      </p>
+      <p class="card-title mt-4"><%= "Lv.#{movie_counter + @movies.offset_value + 1} : #{movie.title}" %></p>
+    </div>
+  </div>
+</div>
